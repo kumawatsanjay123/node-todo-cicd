@@ -47,4 +47,4 @@ jobs:
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/ci-cd-tutorial:latest
             sudo docker stop ci-cd-tutorial || true
             sudo docker rm ci-cd-tutorial || true
-            sudo docker run -d --name ci-cd-tutorial -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/ci-cd-tutorial:latest
+            sudo docker run -d --name ci-cd-tutorial -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/ci-cd-tutorial:latest
